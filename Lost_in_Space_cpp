@@ -1,0 +1,630 @@
+// Jose Ocampo
+// 27 January 2022
+// Lost in Space -- Text-Based Adventure Project
+
+# include <iostream>
+int main () {
+    int c;
+ 
+    // Intro
+    std::string name;
+    std::cout << " ===========================================\n";
+    std::cout << "              Lost in Space\n";
+    std::cout << " ===========================================\n\n";
+    std::cout << "Please enter your name to begin: ";
+    std::cin >> name;
+    
+    std::cout << "Press any number and [enter] to read the next line.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+    std::cout << "\nYou are an astronaut and your ship has crashed on an unknown planet.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You blacked out during your descent into the planet's surface.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You find yourself dizzy and confused\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "'Where am I?'\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You look around in awe at the beauty of the planet.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "'This is so beautiful! Just like Earth... just without all the people.'\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "'I wonder what this place is. It is undeniably mesmerizing.'\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+    // Choice 1
+    
+    char choice1;
+    
+    
+    std::cout << "You exit your ship and close your eyes, trying to process the situation.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You know you can't just stay standing forever, what do you do?\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+        
+        std::cout << "A) Take off helmet\n\n";
+        std::cout << "B) Try using your radio\n\n";
+        std::cout << "C) Look around some more\n\n";
+        std::cout << "  >  ";
+        std::cin >> choice1;
+    
+    while (choice1 != 'A' and choice1 != 'B' and choice1 != 'C') {
+        std::cout << "Invalid input! Try again!\n\n";
+        std::cout << "  >  ";
+        std::cin >> choice1;
+    }
+    
+    if (choice1 == 'A' ) {
+        std::cout << "\n'I... can't... breathe...'\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'Please... someone... help...'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "The atmosphere is composed of ammonia!\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "GAME OVER\n\n";
+        std::cout << "Ending 1: Death by toxic atmosphere.\n\n";
+        return 0;
+        
+    } else if (choice1 == 'B') {
+        std::cout << "\nYou pick up the radio and try to call for anyone to answer.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'Hello? Can anyone hear me? This is " << name << ".'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "There is no answer. You try again.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'" << name << " here, does anyone copy? Over.'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "Still no response.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'Shit'.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You stare into the distance, realizing that you are alone.\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You take a deep breath and start walking.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+    
+    } else if (choice1 == 'C') {
+        std::cout << "\nYou start to look around and are amazed by the beauty of the planet.\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "It is a frozen planet, ice covering the surface as far as the eye can see.\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "There are ice clouds covering the sky and a rocky surface covered in ice.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'It looks just like a planet-sized mountain.'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You marvel some more before continuing on your path.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+    }
+    
+    // Continue story
+    
+    std::cout << "You walk and you see that there is nothing but icy rock for miles on end.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You shiver a little, but your suit is well-equipped to keep you warm,\n";
+    
+    
+    std::cout << "at least for now.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "As you keep exploring, you realize that it is getting dark, the temperature\n";
+    std::cout << "dropping as darkness takes over.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+    // Choice 2
+    
+    char choice2;
+    
+    std::cout << "It is getting too dark and too cold.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "There may still be time to explore, or you could go back to the ship.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "What will you choose?\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+        std::cout << "A) Go back to the ship\n\n";
+        std::cout << "B) Keep exploring\n\n";
+        std::cout << "  <  ";
+        std::cin >> choice2;
+    
+    while (choice2 != 'A' and choice2 != 'B') {
+        std::cout << "Invalid input! Try again!\n\n";
+        std::cout << "  >  ";
+        std::cin >> choice2;
+    }
+    
+    if (choice2 == 'A') {
+        std::cout << "As you walk back to your ship, you notice that you are no longer alone.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You get closer to inspect, you see a group of eight four-legged\n" << "creatures circling around the ship.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        
+        // Choice 2a
+        char choice2a;
+               
+        std::cout << "What is your next move?\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "A) Try to approach them.\n\n";
+        std::cout << "B) Turn back slowly and run away.\n\n";
+        std::cout << "  >  ";
+        std::cin >> choice2a;
+        
+        while (choice2a != 'A' and choice2a != 'B') {
+            std::cout << "Invalid input! Try again!\n\n";
+            std::cout << "  >  ";
+            std::cin >> choice2a;
+        }
+        if (choice2a == 'A') {
+            std::cout << "As you approach the creatures, they all turn around and growl.\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "'Easy... easy...'\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "You say as you walk away.\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "The creatures watch you as you slowly walk away.\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "----SNAP----\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "You stepped on a branch and the creatures attack you.\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "GAME OVER\n\n";
+            std::cout << "Ending 2: Death by alien attack.\n\n";
+            return 0;
+       
+        } else if (choice2a == 'B') {
+            std::cout << "Being as careful as possible, you start to back away.\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+            std::cout << "Once it is safe, you turn and run away as fast as you can.\n\n";
+            
+            std::cin >> c;
+            std::cout << "\n";
+            
+        }
+        
+        // Still Choice 2
+        
+    } else if (choice2 == 'B') {
+        std::cout << "\nYou prepare yourself for a couple more hours of exploration and\n";
+        std::cout << "head forward.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+    }
+    
+    // Continue story
+    
+    std::cout << "Then more you walk, the more you realize how similar the planet is.\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "Everywhere you look, there is land covered by ice and trees.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "As you venture into the icy forest, you see what seems to be another ship!\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "You approach the ship and see a familiar logo:\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "'NASA'\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    std::cout << "The door is locked and you need a 4-digit pin to get in.\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+    // Choice 3
+    
+    std::cout << "What will you do?\n\n";
+    
+    std::cin >> c;
+    std::cout << "\n";
+    
+    
+    char choice3;
+    
+    std::cout << "A) Keep walking\n\n";
+    std::cout << "B) Enter the ship\n\n";
+    std::cout << "  >  ";
+    std::cin >> choice3;
+
+    while (choice2 != 'A' and choice2 != 'B') {
+    std::cout << "Invalid input! Try again!\n\n";
+    std::cout << "  >  ";
+    std::cin >> choice3;
+}
+    if (choice3 == 'A') {
+        std::cout << "\nYou decide to keep walking into the night.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "As it gets darker and darker, you are trying to seek refuge.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You see a spot next to a tree, with a couple of leaves to cover up.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You are too far from your ship and decide to just lay there until\n" << "the morning.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You shiver...\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'So... cold...\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'Need... ship...'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        
+        std::cout << "GAME OVER\n\n";
+        std::cout << "Ending 3: Death by hypothermia.\n\n";
+        return 0;
+   
+    } else if (choice3 == 'B') {
+        std::cout << "You approach the ship, not knowing if the ship or the pinpad will work.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "----TAP----\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You tap the screen and it works!";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "The screen reads: \n\n";
+        std::cout << "You have three tries to enter your pin \n\n";
+        std::cout << "Hint: Fibonacci\n\n";
+        
+        // Entering a pin
+        
+        int pin;
+        for (int i = 0; i < 3 and pin != 1123; i++){
+            
+            std::cout << "PIN: ";
+            std::cin >> pin;
+            
+            if (i == 2){
+                std::cout << "You have 0 tries left.\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "----ACCESS DENIED----\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "\nYou decide to keep walking into the night.\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "As it gets darker and darker, you are trying to seek refuge.\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "You see a spot next to a tree, with a couple of leaves to cover up.\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "You are too far from your ship and decide to just lay there until\n" << "the morning.\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "You shiver...\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "'So... cold...\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                std::cout << "'Need... ship...'\n\n";
+                
+                std::cin >> c;
+                std::cout << "\n";
+                
+                
+                std::cout << "GAME OVER\n\n";
+                std::cout << "Ending 3: Death by hypothermia.\n\n";
+                return 0;
+        }
+        }
+        }
+    
+        // Continue after correct PIN.
+    
+        std::cout << "\n----ACCESS GRANTED----\n\n";
+    
+        std::cin >> c;
+        std::cout << "\n";
+    
+        std::cout << "You guessed the PIN!\n\n";
+    
+        std::cin >> c;
+        std::cout << "\n";
+    
+    
+        std::cout << "You do some exploring around the ship but cannot find anyone else.\n\n";
+    
+        std::cin >> c;
+        std::cout << "\n";
+    
+    
+        // Choice 4
+        char choice4;
+        std::cout << "The ship works, so you have a choice to make. Will you:\n\n";
+    
+        std::cin >> c;
+        std::cout << "\n";
+    
+        std::cout << "A) Look for the missing crew\n\n";
+        std::cout << "OR\n\n";
+        std::cout << "B) Take off\n\n";
+        std::cout << "  >  ";
+        std::cin >> choice4;
+   
+        while (choice4 != 'A' and choice4 != 'B') {
+            std::cout << "Invalid input! Try again!\n\n";
+            std::cout << "  >  ";
+            std::cin >> choice4;
+        }
+    if (choice4 == 'A') {
+        std::cout << "\nYou exit the ship to look for the missing crew.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You walk into the darkness of the forest, using only instinct\n";
+        std::cout << "and your fading monitors to guide the way.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "A few yards away, you see three people sitting around a tree.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "Heart racing, you run to meet the crew.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+                
+        std::cout << "'Oh, I am so happy to find you! I thought I was alone here.'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You stop and gasp.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "The crew has frozen to death.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        
+        std::cout << "----BEEP----";
+        
+        std::cout << "It's your oxygen monitor.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        
+        std::cout << "'Oxygen levels are low, please recharge or dock immediately.'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You start to run back, but you are too far.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        
+        std::cout << "---CHOKE---";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "Can't... breathe... someone... help... please...\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "GAME OVER\n\n";
+        std::cout << "Ending 4: Death by loss of oxygen.\n\n";
+        return 0;
+        
+    } else if (choice4 == 'B') {
+        std::cout << "\nYou sit on the pilots seat and turn on the controls.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "'Let's go home'\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "You smile triumphantly as the ship takes off back to Earth.\n\n";
+        
+        std::cin >> c;
+        std::cout << "\n";
+        
+        std::cout << "CONGRATULATIONS! YOU WIN!\n\n";
+        std::cout << "Ending 5: Back to earth\n\n";
+        return 0;
+    }
+               
+    
+    
+    
+    
+    
+    
+}
